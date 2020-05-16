@@ -1,0 +1,39 @@
+.container {
+
+    background-color: aquamarine;
+    max-width: 800px;
+    padding: 20px auto;
+}
+
+.inside-container {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5em;
+    margin: 20px auto;
+    padding: 20px auto;
+    text-align: center;
+    border: 2px solid black;    
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px auto;
+    background-color: lightgrey;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+input[type=text] {
+    max-width: 800px;
+    width: 797px;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
