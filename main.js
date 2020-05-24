@@ -8,15 +8,15 @@ const formValue = form.id.value.trim();
 
 //create async function and connect to pokemon api and fetch data
 
-const fetchPokemon = async () => {
-    let res = await fetch(`https://pokeapi.co/api/v2/pokemon/26`); //need to make the url load data dynamically
+const fetchPokemon = async (id) => {
+    let res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`); //need to make the url load data dynamically
     let data = await res.json();
 
     return data;
 };
 //use then method to extract data from the api results and output data to DOM
 
-fetchPokemon()
+fetchPokemon('26')
 .then((data) => {
     console.log(data);
     //use destructuring on the data object to access results more easily
@@ -39,3 +39,4 @@ fetchPokemon()
 div1.innerHTML = html;
 
 })
+
