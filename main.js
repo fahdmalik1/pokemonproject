@@ -16,7 +16,7 @@ const fetchPokemon = async (id) => {
 };
 //use then method to extract data from the api results and output data to DOM
 
-fetchPokemon('26')
+fetchPokemon(formValue)
 .then((data) => {
     console.log(data);
     //use destructuring on the data object to access results more easily
@@ -39,4 +39,6 @@ fetchPokemon('26')
 div1.innerHTML = html;
 
 })
+
+
 
